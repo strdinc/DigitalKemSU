@@ -16,7 +16,7 @@
   font-weight: 200;
 }
 
-
+/* Основные стили для body */
 body {
   font-family: 'Gilroy', sans-serif;
   background-color: transparent;
@@ -28,19 +28,20 @@ body {
 
 .container {
   width: 100vw;
-  height: calc(100vh - 5vh);
+  height: calc(7993 / 1920 * 100vw);
   margin: 0 auto;
   position: relative;
 }
 
+/* Шапка */
 header {
   background-color: transparent;
-  padding: 1vh;
+  padding: calc(1 / 1920 * 100vw);
 }
 
 .logo {
   position: relative;
-  top: calc(193 / 1080 * 100vh);
+  top: calc(193 / 1920 * 100vw);
   left: calc(173 / 1920 * 100vw);
   width: calc(347 / 1920 * 100vw);
   height: auto;
@@ -51,11 +52,10 @@ header {
   height: auto;
 }
 
-
 /* Меню */
 nav {
   position: absolute;
-  top: calc(215 / 1080 * 100vh);
+  top: calc(215 / 1920 * 100vw);
   left: calc(794 / 1920 * 100vw);
   background-color: transparent;
   font-family: 'Gilroy', sans-serif;
@@ -91,9 +91,8 @@ nav ul li a:hover {
   font-size: calc(96 / 1920 * 100vw);
   color: #005EBE;
 
-
   position: absolute;
-  top: clamp(30vh, calc(507 / 1080 * 100vh), 50vh);
+  top: calc(507 / 1920 * 100vw);
   left: calc(179 / 1920 * 100vw);
 }
 
@@ -104,7 +103,7 @@ nav ul li a:hover {
   border-radius: calc(45 / 1920 * 100vw) 0 0 calc(45 / 1920 * 100vw);
   background-color: #005EBE;
   position: absolute;
-  top: calc(368 / 1080 * 100vh);
+  top: calc(368 / 1920 * 100vw);
   left: calc(981 / 1920 * 100vw);
 }
 
@@ -123,9 +122,9 @@ nav ul li a:hover {
 /* Новости */
 .News {
   width: calc(1593 / 1920 * 100vw);
-  height: calc(982 / 1080 * 100vh);
+  height: calc(982 / 1920 * 100vw);
   position: absolute;
-  top: calc(1168 / 1080 * 100vh);
+  top: calc(1168 / 1920 * 100vw);
   left: calc(179 / 1920 * 100vw);
   background-color: #005EBE;
   border-radius: calc(45 / 1920 * 100vw);
@@ -133,9 +132,9 @@ nav ul li a:hover {
 
 .News_block {
   width: calc(932 / 1920 * 100vw);
-  height: calc(176 / 1080 * 100vh);
+  height: calc(176 / 1920 * 100vw);
   position: absolute;
-  top: calc(404 / 1080 * 100vh);
+  top: calc(404 / 1920 * 100vw);
   left: calc(331 / 1920 * 100vw);
   font-family: 'Gilroy', sans-serif;
   font-weight: 650;
@@ -148,7 +147,7 @@ footer {
   background-color: #005EBE;
   color: #005EBE;
   text-align: center;
-  padding: 1vh;
+  padding: calc(1 / 1920 * 100vw);
   position: fixed;
   width: 100%;
   bottom: 0;
