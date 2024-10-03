@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url('fonts/Gilroy-Heavy.ttf') format('truetype');
+  font-weight: 1000;
+}
+
+.container {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: transparent;
+  overflow-x: hidden;
+  font-family: Gilroy, sans-serif;
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px;
+
+}
+
+.logo {
+  position: relative;
+  top: 193px;
+  left: 173px;
+  width: 347px;
+  height: 84px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  position: absolute;
+  top: 215px;
+  left: 794px;
+  background-color: transparent;
+  font-family: 'Gilroy', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  margin: 0 34px;
+  white-space: nowrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 33px;
+  color: #005EBE;
+  font-weight: 550;
+}
+
+nav ul li a:hover {
+  color: #033392;
+}
+
+.slogan {
+  width: 780px;
+  height: 453px;
+  position: absolute;
+  top: 507px;
+  left: 179px;
+
+
+  justify-content: left;
+
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  color: #005EBE;
+}
+
+.rectangle_about {
+  width: 939px;
+  height: 598px;
+  border-radius: 45px 0 0 45px;
+  background-color: #005EBE;
+  position: absolute;
+  top: 368px;
+  left: 981px;
+}
+
+.about {
+  width: 748px;
+  height: 424px;
+  position: absolute;
+  top: 87px;
+  left: 96px;
+  box-sizing: border-box;
+
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 46px;
+  color: white;
+}
+
+.News {
+  width: 1593px;
+  height: 982px;
+  position: absolute;
+  top: 1168px;
+  left: 179px;
+  background-color: #005EBE;
+  border-radius: 45px;
+}
+
+.News_block {
+  width: 932px;
+  height: 176px;
+  position: absolute;
+  top: 404px;
+  left: 331px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 650;
+  font-size: 245px;
+  color: white;
+}
+
+
+
+
+footer {
+  background-color: #005EBE;
+  color: #005EBE;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
