@@ -16,118 +16,64 @@
   font-weight: 200;
 }
 
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Light.ttf') format('truetype');
-  font-weight: 300;
-}
 
-@font-face {
+body {
   font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Medium.ttf') format('truetype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Semibold.ttf') format('truetype');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Extrabold.ttf') format('truetype');
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Black.ttf') format('truetype');
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('fonts/Gilroy-Heavy.ttf') format('truetype');
-  font-weight: 1000;
+  background-color: transparent;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 5vh);
   margin: 0 auto;
   position: relative;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: transparent;
-  overflow-x: hidden;
-  font-family: Gilroy, sans-serif;
-  background-image: url("../images/background.png");
-  background-size: cover;
-}
-
 header {
   background-color: transparent;
-  padding: 10px;
-
+  padding: 1vh;
 }
 
 .logo {
   position: relative;
-  top: 193px;
-  left: 173px;
-  width: 347px;
-  height: 84px;
+  top: calc(193 / 1080 * 100vh);
+  left: calc(173 / 1920 * 100vw);
+  width: calc(347 / 1920 * 100vw);
+  height: auto;
 }
 
 .logo img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
+
+/* Меню */
 nav {
   position: absolute;
-  top: 215px;
-  left: 794px;
+  top: calc(215 / 1080 * 100vh);
+  left: calc(794 / 1920 * 100vw);
   background-color: transparent;
   font-family: 'Gilroy', sans-serif;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: left;
 }
 
 nav ul li {
-  margin: 0 34px;
-  white-space: nowrap;
+  margin: 0 calc(34 / 1920 * 100vw);
 }
 
 nav ul li a {
   text-decoration: none;
-  font-size: 33px;
+  font-size: calc(33 / 1920 * 100vw);
   color: #005EBE;
   font-weight: 550;
 }
@@ -136,76 +82,73 @@ nav ul li a:hover {
   color: #033392;
 }
 
+/* Слоган */
 .slogan {
-  width: 780px;
-  height: 453px;
-  position: absolute;
-  top: 507px;
-  left: 179px;
-
-
-  justify-content: left;
-
+  width: calc(780 / 1920 * 100vw);
+  height: auto;
   font-family: 'Gilroy', sans-serif;
   font-weight: 700;
-  font-size: 96px;
+  font-size: calc(96 / 1920 * 100vw);
   color: #005EBE;
+
+
+  position: absolute;
+  top: clamp(30vh, calc(507 / 1080 * 100vh), 50vh);
+  left: calc(179 / 1920 * 100vw);
 }
 
+/* Прямоугольник "О нас" */
 .rectangle_about {
-  width: 939px;
-  height: 598px;
-  border-radius: 45px 0 0 45px;
+  width: calc(939 / 1920 * 100vw);
+  height: calc(598 / 1920 * 100vw);
+  border-radius: calc(45 / 1920 * 100vw) 0 0 calc(45 / 1920 * 100vw);
   background-color: #005EBE;
   position: absolute;
-  top: 368px;
-  left: 981px;
+  top: calc(368 / 1080 * 100vh);
+  left: calc(981 / 1920 * 100vw);
 }
 
 .about {
-  width: 748px;
-  height: 424px;
+  width: calc(748 / 1920 * 100vw);
+  height: calc(424 / 1920 * 100vw);
   position: absolute;
-  top: 87px;
-  left: 96px;
-  box-sizing: border-box;
-
+  top: calc(87 / 1920 * 100vw);
+  left: calc(96 / 1920 * 100vw);
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
-  font-size: 46px;
+  font-size: calc(46 / 1920 * 100vw);
   color: white;
 }
 
+/* Новости */
 .News {
-  width: 1593px;
-  height: 982px;
+  width: calc(1593 / 1920 * 100vw);
+  height: calc(982 / 1080 * 100vh);
   position: absolute;
-  top: 1168px;
-  left: 179px;
+  top: calc(1168 / 1080 * 100vh);
+  left: calc(179 / 1920 * 100vw);
   background-color: #005EBE;
-  border-radius: 45px;
+  border-radius: calc(45 / 1920 * 100vw);
 }
 
 .News_block {
-  width: 932px;
-  height: 176px;
+  width: calc(932 / 1920 * 100vw);
+  height: calc(176 / 1080 * 100vh);
   position: absolute;
-  top: 404px;
-  left: 331px;
+  top: calc(404 / 1080 * 100vh);
+  left: calc(331 / 1920 * 100vw);
   font-family: 'Gilroy', sans-serif;
   font-weight: 650;
-  font-size: 245px;
+  font-size: calc(24 / 1920 * 100vw);
   color: white;
 }
 
-
-
-
+/* Футер */
 footer {
   background-color: #005EBE;
   color: #005EBE;
   text-align: center;
-  padding: 10px;
+  padding: 1vh;
   position: fixed;
   width: 100%;
   bottom: 0;
