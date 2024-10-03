@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+
+/*Для корректного изображения top-68*/
+
+
 @font-face {
   font-family: 'Gilroy', sans-serif;
   src: url('fonts/Gilroy-Thin.ttf') format('truetype');
@@ -35,16 +39,21 @@ body {
 
 /* Шапка */
 header {
-  background-color: transparent;
-  padding: calc(1 / 1920 * 100vw);
+  position: relative;
+  width: 100vw;
+  height: calc(300 / 1920 * 100vw); /* Задаем высоту шапки */
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent; /* Прозрачный фон */
 }
 
 .logo {
   position: relative;
-  top: calc(193 / 1920 * 100vw);
-  left: calc(173 / 1920 * 100vw);
-  width: calc(347 / 1920 * 100vw);
+  width: calc(347 / 1920 * 100vw); /* Пропорциональная ширина логотипа */
   height: auto;
+  margin-left: calc(173 / 1920 * 100vw); /* Пропорциональный отступ слева */
 }
 
 .logo img {
@@ -54,26 +63,25 @@ header {
 
 /* Меню */
 nav {
-  position: absolute;
-  top: calc(215 / 1920 * 100vw);
-  left: calc(794 / 1920 * 100vw);
-  background-color: transparent;
-  font-family: 'Gilroy', sans-serif;
+  position: relative;
+  margin-left: calc(450 / 1920 * 100vw); /* Расстояние от логотипа до меню */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: left;
+  gap: calc(34 / 1920 * 100vw); /* Пробелы между пунктами меню */
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 calc(34 / 1920 * 100vw);
+  margin: 0;
 }
 
 nav ul li a {
   text-decoration: none;
-  font-size: calc(33 / 1920 * 100vw);
+  font-size: calc(33 / 1920 * 100vw); /* Пропорционально ширине экрана */
   color: #005EBE;
   font-weight: 550;
 }
@@ -92,7 +100,7 @@ nav ul li a:hover {
   color: #005EBE;
 
   position: absolute;
-  top: calc(507 / 1920 * 100vw);
+  top: calc(439 / 1920 * 100vw);
   left: calc(179 / 1920 * 100vw);
 }
 
@@ -103,7 +111,7 @@ nav ul li a:hover {
   border-radius: calc(45 / 1920 * 100vw) 0 0 calc(45 / 1920 * 100vw);
   background-color: #005EBE;
   position: absolute;
-  top: calc(368 / 1920 * 100vw);
+  top: calc(300 / 1920 * 100vw);
   left: calc(981 / 1920 * 100vw);
 }
 
@@ -124,7 +132,7 @@ nav ul li a:hover {
   width: calc(1593 / 1920 * 100vw);
   height: calc(982 / 1920 * 100vw);
   position: absolute;
-  top: calc(1168 / 1920 * 100vw);
+  top: calc(1100 / 1920 * 100vw);
   left: calc(179 / 1920 * 100vw);
   background-color: #005EBE;
   border-radius: calc(45 / 1920 * 100vw);
@@ -134,11 +142,11 @@ nav ul li a:hover {
   width: calc(932 / 1920 * 100vw);
   height: calc(176 / 1920 * 100vw);
   position: absolute;
-  top: calc(404 / 1920 * 100vw);
-  left: calc(331 / 1920 * 100vw);
+  top: calc(332 / 1920 * 100vw);
+  left: calc(295 / 1920 * 100vw);
   font-family: 'Gilroy', sans-serif;
   font-weight: 650;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: calc(264 / 1920 * 100vw);
   color: white;
 }
 
