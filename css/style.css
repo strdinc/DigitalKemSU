@@ -20,21 +20,27 @@
   font-weight: 200;
 }
 
+
+
 /* Основные стили для body */
 body {
   font-family: 'Gilroy', sans-serif;
   background-color: transparent;
   background-image: url("../images/background.png");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
+/* Контейнер */
 .container {
-  width: 100vw;
-  margin: 0 auto;
-  position: relative;
+  flex: 1; /* Заставляем контейнер растягиваться, заполняя оставшееся пространство */
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 /* Шапка */
 header {
@@ -234,7 +240,7 @@ nav ul li a:hover {
   width: calc(1596 / 1920 * 100vw);
   height: calc(290 / 1920 * 100vw);
   position: absolute;
-  top: calc(55 / 1920 * 100vw);
+  top: calc(40 / 1920 * 100vw);
   left: calc(179 / 1920 * 100vw);
   font-family: 'Gilroy', sans-serif;
   font-weight: 850;
@@ -246,13 +252,253 @@ nav ul li a:hover {
   list-style-type: none;
 }
 
-/* Футер */
+.Programs {
+  width: calc(1609 / 1920 * 100vw);
+  height: calc(2491 / 1920 * 100vw);
+  position: absolute;
+  top: calc(3810 / 1920 * 100vw);
+  left: calc(179 / 1920 * 100vw);
+}
+
+.AreasOfTraining_Rectangle {
+  width: calc(979 / 1920 * 100vw);
+  height: calc(152 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+  background-color: #005EBE;
+  border-radius: calc(45 / 1920 * 100vw);
+}
+
+.AreasOfTrainig_Title {
+  position: absolute;
+  top: calc(25 / 1920 * 100vw);
+  left: calc(45 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: calc(74 / 1920 * 100vw);
+  color: white;
+}
+
+.Bachelor_Block {
+  width: calc(1609 / 1920 * 100vw);
+  height: calc(956 / 1920 * 100vw);
+  position: absolute;
+  top: calc(199 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Speciality_Block {
+  width: calc(1178 / 1920 * 100vw);
+  height: calc(287 / 1920 * 100vw);
+  position: absolute;
+  top: calc(1205 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Magistracy_Block {
+  width: calc(1428 / 1920 * 100vw);
+  height: calc(955 / 1920 * 100vw);
+  position: absolute;
+  top: calc(1539 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Bachelor_Title_Block, .Speciality_Title_Block {
+  width: calc(640 / 1920 * 100vw);
+  height: calc(287 / 1920 * 100vw);
+  background-color: #005EBE;
+  border-radius: calc(45 / 1920 * 100vw);
+
+}
+
+.Magistracy_Title_Block {
+  width: calc(679 / 1920 * 100vw);
+  height: calc(287 / 1920 * 100vw);
+  background-color: #005EBE;
+  border-radius: calc(45 / 1920 * 100vw);
+
+}
+
+.Bachelor_Title_Block, .Magistracy_Title_Block {
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Speciality_Title_Block {
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(529 / 1920 * 100vw);
+}
+
+.Bachelor_Title, .Speciality_Title {
+  position: absolute;
+  top: calc(88 / 1920 * 100vw);
+  left: calc(52 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: calc(86 / 1920 * 100vw);
+  color: white;
+}
+
+.Magistracy_Title {
+  position: absolute;
+  top: calc(88 / 1920 * 100vw);
+  left: calc(45 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: calc(86 / 1920 * 100vw);
+  color: white;
+}
+
+.Block_010302, .Block_020302, .Block_090303, .Block_020303,
+.Block_100501, .Block_090403, .Block_020403, .Block_0104021 {
+  height: calc(287 / 1920 * 100vw);
+  background-color: #EBEBEB;
+  border-radius: calc(45 / 1920 * 100vw);
+}
+
+.Block_010302 {
+  width: calc(778 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(686 / 1920 * 100vw);
+}
+
+.Block_020302 {
+  width: calc(982 / 1920 * 100vw);
+  position: absolute;
+  top: calc(334 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Block_090303 {
+  width: calc(452 / 1920 * 100vw);
+  position: absolute;
+  top: calc(334 / 1920 * 100vw);
+  left: calc(1030 / 1920 * 100vw);
+}
+
+.Block_020303 {
+  width: calc(1428 / 1920 * 100vw);
+  position: absolute;
+  top: calc(669 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Block_100501 {
+  width: calc(484 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Block_090403 {
+  width: calc(452 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(723 / 1920 * 100vw);
+}
+
+.Block_020403 {
+  width: calc(1428 / 1920 * 100vw);
+  position: absolute;
+  top: calc(334 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.Block_0104021 {
+  width: calc(776 / 1920 * 100vw);
+  position: absolute;
+  top: calc(668 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.WOB010302, .WOB020302, .WOB090303, .WOB020303,
+.WOB100501, .WOB090403, .WOB020403, .WOB0104021 {
+  list-style-type: none;
+}
+
+.WOB010302 li, .WOB020302 li, .WOB090303 li, .WOB020303 li,
+.WOB100501 li, .WOB090403 li, .WOB020403 li, .WOB0104021 li {
+  margin-bottom: calc(-16 / 1920 * 100vw);
+}
+
+.Number_010302, .Number_020302, .Number_090303, .Number_020303,
+.Number_100501, .Number_090403, .Number_020403, .Number_0104021 {
+  position: absolute;
+  top: calc(41 / 1920 * 100vw);
+  left: calc(43 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: calc(59 / 1920 * 100vw);
+  color: #005EBE;
+}
+
+.Name_010302, .Name_020302, .Name_090303, .Name_020303,
+.Name_100501, .Name_090403, .Name_020403, .Name_0104021 {
+  position: absolute;
+  top: calc(108 / 1920 * 100vw);
+  left: calc(43 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 450;
+  font-size: calc(59 / 1920 * 100vw);
+  color: #005EBE;
+}
+
+.arrow010302, .arrow020302, .arrow090303, .arrow020303,
+.arrow100501, .arrow090403, .arrow020403, .arrow0104021 {
+  width: calc(48 / 1920 * 100vw);
+  position: absolute;
+  top: calc(48 / 1920 * 100vw);
+  right: calc(43 / 1920 * 100vw);
+}
+
+
 footer {
   background-color: #005EBE;
-  color: #005EBE;
+  color: white;
+  padding: 20px;
   text-align: center;
-  padding: calc(1 / 1920 * 100vw);
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  box-sizing: border-box;
+  /* Теперь футер будет внизу, если контента мало */
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Логотип в футере */
+.logo_footer {
+  width: 100%;  /* Заставляем логотип занимать 100% ширины контейнера */
+  max-width: 1567px;  /* Максимальная ширина */
+  height: auto;  /* Автоматическая высота для пропорций */
+  margin-top: 20px;
+}
+
+/* Настройка ссылок и разделов в футере */
+footer h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+footer ul li a:hover {
+  color: #ccc;
 }
