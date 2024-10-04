@@ -20,9 +20,6 @@
   font-weight: 200;
 }
 
-
-
-/* Основные стили для body */
 body {
   font-family: 'Gilroy', sans-serif;
   background-color: transparent;
@@ -32,15 +29,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
-/* Контейнер */
-.container {
-  flex: 1; /* Заставляем контейнер растягиваться, заполняя оставшееся пространство */
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 /* Шапка */
 header {
@@ -52,6 +40,10 @@ header {
   justify-content: flex-start;
   align-items: center;
   background-color: transparent; /* Прозрачный фон */
+}
+
+main {
+  flex-grow: 1; /* Позволяем основному контенту занимать оставшуюся высоту страницы */
 }
 
 .logo {
@@ -455,50 +447,133 @@ nav ul li a:hover {
   right: calc(43 / 1920 * 100vw);
 }
 
-
-footer {
+.Footer_cont {
+  height: calc(1259 / 1920 * 100vw);
+  position: absolute;
+  top: calc(6734 / 1920 * 100vw);
+  width: 100vw;
   background-color: #005EBE;
+}
+
+/*шрифт 46 450*/
+
+.Column1 {
+  width: calc(498 / 1920 * 100vw);
+  height: calc(302 / 1920 * 100vw);
+  position: absolute;
+  top: calc(140 / 1920 * 100vw);
+  left: calc(179 / 1920 * 100vw);
+}
+
+.Column2 {
+  width: calc(685 / 1920 * 100vw);
+  height: calc(211 / 1920 * 100vw);
+  position: absolute;
+  top: calc(140 / 1920 * 100vw);
+  left: calc(799 / 1920 * 100vw);
+}
+
+.Column3 {
+  width: calc(395 / 1920 * 100vw);
+  height: calc(311 / 1920 * 100vw);
+  position: absolute;
+  top: calc(520 / 1920 * 100vw);
+  left: calc(179/ 1920 * 100vw);
+}
+
+.Column4 {
+  width: calc(311 / 1920 * 100vw);
+  height: calc(212 / 1920 * 100vw);
+  position: absolute;
+  top: calc(520 / 1920 * 100vw);
+  left: calc(799 / 1920 * 100vw);
+}
+.Column5 {
+  width: calc(350 / 1920 * 100vw);
+  height: calc(205 / 1920 * 100vw);
+  position: absolute;
+  top: calc(520 / 1920 * 100vw);
+  left: calc(1421 / 1920 * 100vw);
+}
+
+.Contacts {
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 350;
+  font-size: calc(34 / 1920 * 100vw);
   color: white;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  /* Теперь футер будет внизу, если контента мало */
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Логотип в футере */
-.logo_footer {
-  width: 100%;  /* Заставляем логотип занимать 100% ширины контейнера */
-  max-width: 1567px;  /* Максимальная ширина */
-  height: auto;  /* Автоматическая высота для пропорций */
-  margin-top: 20px;
+.AboutInstituteTitle, .DepartmentsTitle,
+.ForStudentsTitle, .ForAbiturTitle {
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 450;
+  font-size: calc(46 / 1920 * 100vw);
+  color: white;
 }
 
-/* Настройка ссылок и разделов в футере */
-footer h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.AboutInstitute, .Departments,
+.ForStudents, .ForAbitur {
+  position: absolute;
+  top: calc(76 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 350;
+  font-size: calc(34 / 1920 * 100vw);
+  color: white;
 }
 
-footer ul {
+.AboutInstituteUL, .DepartmentsUL,
+.ForStudentsUL, .ForAbiturUL, .Contacts {
   list-style: none;
-  padding: 0;
 }
 
-footer ul li {
-  margin: 5px 0;
+.AboutInstituteUL li, .DepartmentsUL li,
+.ForStudentsUL li, .ForAbiturUL li, .Contacts li {
+  margin-bottom: calc(10 / 1920 * 100vw);
 }
 
-footer ul li a {
+.AboutInstituteUL a, .DepartmentsUL a,
+.ForStudentsUL a, .ForAbiturUL a, .Contacts a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-footer ul li a:hover {
-  color: #ccc;
+.AboutInstituteUL a:hover, .DepartmentsUL a:hover,
+.ForStudentsUL a:hover, .ForAbiturUL a:hover, .Contacts a:hover {
+  color: #c8c6c6;
+}
+
+.Logos {
+  width: calc(1567 / 1920 * 100vw);
+  height: calc(262 / 1920 * 100vw);
+  position: absolute;
+  top: calc(882 / 1920 * 100vw);
+  left: calc(179 / 1920 * 100vw);
+}
+
+.KemSU {
+  width: calc(327 / 1920 * 100vw);
+  position: absolute;
+  top: calc(35 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.InstituteDigit {
+  width: calc(567 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(554 / 1920 * 100vw);
+}
+
+.MinOfSciAndHiEdu {
+  width: calc(219 / 1920 * 100vw);
+  position: absolute;
+  right: calc(0 / 1920 * 100vw);
 }
