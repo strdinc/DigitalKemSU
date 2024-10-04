@@ -32,7 +32,6 @@ body {
 
 .container {
   width: 100vw;
-  height: calc(7993 / 1920 * 100vw);
   margin: 0 auto;
   position: relative;
 }
@@ -64,13 +63,13 @@ header {
 /* Меню */
 nav {
   position: relative;
-  margin-left: calc(450 / 1920 * 100vw); /* Расстояние от логотипа до меню */
+  margin-left: calc(450 / 1920 * 100vw);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: calc(34 / 1920 * 100vw); /* Пробелы между пунктами меню */
+  gap: calc(34 / 1920 * 100vw);
   margin: 0;
   padding: 0;
 }
@@ -81,7 +80,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: calc(33 / 1920 * 100vw); /* Пропорционально ширине экрана */
+  font-size: calc(33 / 1920 * 100vw);
   color: #005EBE;
   font-weight: 550;
 }
@@ -130,7 +129,7 @@ nav ul li a:hover {
 /* Новости */
 .News {
   width: calc(1593 / 1920 * 100vw);
-  height: calc(982 / 1920 * 100vw);
+  height: calc(862 / 1920 * 100vw);
   position: absolute;
   top: calc(1100 / 1920 * 100vw);
   left: calc(179 / 1920 * 100vw);
@@ -148,6 +147,103 @@ nav ul li a:hover {
   font-weight: 650;
   font-size: calc(264 / 1920 * 100vw);
   color: white;
+}
+
+.Photo_block {
+  width: calc(1596 / 1920 * 100vw);
+  height: calc(1171 / 1920 * 100vw);
+  position: absolute;
+  top: calc(2102 / 1920 * 100vw);
+  left: calc(179 / 1920 * 100vw);
+  background-color: transparent;
+}
+
+.PB1 {
+  width: calc(485 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.PB2 {
+  width: calc(780 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(505 / 1920 * 100vw);
+}
+
+.PB3 {
+  width: calc(1030 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(546 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+}
+
+.PB4 {
+  width: calc(545 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(584 / 1920 * 100vw);
+  left: calc(1051 / 1920 * 100vw);
+}
+
+.PBRec1 {
+  width: calc(404 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(363 / 1920 * 100vw);
+  left: calc(40 / 1920 * 100vw);
+}
+
+.PBRec2 {
+  width: calc(253 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(0 / 1920 * 100vw);
+  left: calc(1343 / 1920 * 100vw);
+}
+
+.PBlogoD {
+  width: calc(545 / 1920 * 100vw);
+  height: auto;
+  border-radius: calc(45 / 1920 * 100vw);
+  position: absolute;
+  top: calc(940 / 1920 * 100vw);
+  left: calc(1051 / 1920 * 100vw);
+}
+
+.history_block {
+  width: calc(1920 / 1920 * 100vw);
+  height: calc(377 / 1920 * 100vw);
+  position: absolute;
+  top: calc(3364 / 1920 * 100vw);
+  left: calc(0 / 1920 * 100vw);
+  background-color: #EBEBEB;
+}
+
+.history {
+  width: calc(1596 / 1920 * 100vw);
+  height: calc(290 / 1920 * 100vw);
+  position: absolute;
+  top: calc(55 / 1920 * 100vw);
+  left: calc(179 / 1920 * 100vw);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 850;
+  font-size: calc(46 / 1920 * 100vw);
+  color: #005EBE;
+}
+
+.HistWOBullet {
+  list-style-type: none;
 }
 
 /* Футер */
