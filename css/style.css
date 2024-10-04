@@ -81,6 +81,7 @@ nav ul li a {
   font-size: calc(33 / 1920 * 100vw);
   color: #005EBE;
   font-weight: 550;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
