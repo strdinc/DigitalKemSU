@@ -541,7 +541,7 @@ nav ul li a:hover {
   width: calc(350 / 1920 * 100vw);
   height: calc(205 / 1920 * 100vw);
   position: absolute;
-  top: calc(520 / 1920 * 100vw);
+  top: calc(527 / 1920 * 100vw);
   left: calc(1421 / 1920 * 100vw);
 }
 
